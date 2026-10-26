@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forall Beauty Parlour</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+  </style>
+</head>
+<body>
+<style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.hero {
+  background-color: #3a1f2b;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("hero.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-bottom: 120px;
+}
+
+.hero-content {
+  padding-top: 80px;
+}.hero h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  max-width: 600px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 480px;
+  margin-bottom: 32px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #b5476b;
+  color: white;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 999px;
+}
+
+.button:hover {
+  background-color: #96385a;
+}
+
+.links .button {
+  padding: 10px 20px;
+}
+.services {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 32px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.card {
+  flex: 1;
+  min-width: 250px;
+  padding: 32px;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+.card p {
+  color: #555;
+  margin-bottom: 16px;
+}
+.card .price {
+  color: #b5476b;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+@media (max-width: 700px) {
+
+  .links a {
+    display: none;
+  }
+
+  .links .button {
+    display: inline-block;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero-content {
+    padding-top: 48px;
+  }
+
+  .hero {
+    padding-bottom: 80px;
+  }
+
+  .services {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+}
+
+</style>
+  <header class="hero">
+    <nav class="container">
+      <div class="logo">Forall Beauty Parlour</div>
+      <div class="links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="button">Book now</a>
+      </div>
+    </nav>
+
+    <div class="container hero-content">
+      <h1>Hair that makes you feel brand new</h1>
+      <p>Every woman needs a few hours to give back to herself.Relax while we take care of the rest</p>
+      <a href="#contact" class="button">Book an appointment</a>
+    </div>
+  </header>
+  <section class="services container" id="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+    <div class="card">
+      <h3>Hair</h3>
+      <p>Natural hair care that reduces breakage, adds volume and keeps your length, plus protective styles for the whole family.</p>
+      <p class="price">From ksh.1500</p>
+    </div>
+    <div class="card">
+      <h3>Nails</h3>
+      <p>Professional nail technicians and any nail art you can imagine, done right</p>
+       <p class="price">From ksh.800</p>
+    </div>
+    <div class="card">
+      <h3>Make up</h3>
+      <p>Flawless makeup for weddings, graduations, big meetings, or your very first try </p>
+       <p class="price">From ksh.2000</p>
+    </div>
+    </div>
+  </section> 
+  <section class="gallery-container" id="gallery">
+    <h2>Gallery</h2>
+    <figure class="gallery-item">
+      <img src="braids.jpg" alt="Braided hairstyle done at Forall">
+      <figcaption>Braids</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="wig.jpg" alt="Wig hairstyle done at Forall">
+      <figcaption>Wigs</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="twist.jpg" alt="Twist hairstyle done at Forall">
+      <figcaption>Twist</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="nails.jpg" alt="Nails  done at Forall">
+      <figcaption>Nails</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="hairdye.jpg" alt="Hairdye hairstyle done at Forall">
+      <figcaption>Hairdye</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="locs.jpg" alt="locs hairstyle done at Forall">
+      <figcaption>Locs</figcaption>
+    </figure>
+
+
+  </section>
+
+</body>
+</html>
